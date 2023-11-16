@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import com.google.firebase.FirebaseApp;
 import com.ogaclejapan.smarttablayout.SmartTabLayout;
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItemAdapter;
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItems;
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setUpActivity() {
+        initFirebase();
         ViewPager viewPager = findViewById(R.id.viewPager);
         SmartTabLayout tabLayout = findViewById(R.id.tabLayout);
         FragmentPagerItemAdapter adapter = new FragmentPagerItemAdapter(
@@ -31,6 +33,10 @@ public class MainActivity extends AppCompatActivity {
                 .create());
         viewPager.setAdapter(adapter);
         tabLayout.setViewPager(viewPager);
+    }
+
+    private void initFirebase() {
+        FirebaseApp.initializeApp(this);
     }
 
 }

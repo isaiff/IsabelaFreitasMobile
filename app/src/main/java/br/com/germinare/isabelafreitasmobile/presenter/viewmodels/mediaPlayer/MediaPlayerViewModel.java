@@ -3,14 +3,13 @@ package br.com.germinare.isabelafreitasmobile.presenter.viewmodels.mediaPlayer;
 import android.content.Context;
 import android.media.MediaPlayer;
 
-import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 public class MediaPlayerViewModel extends ViewModel {
 
     private MediaPlayer mediaPlayer;
-    private MutableLiveData<Boolean> isPlaying = new MutableLiveData<>(false);
+    private final MutableLiveData<Boolean> isPlaying = new MutableLiveData<>(false);
     private Context context;
     private int currentRawResourceId;
 
