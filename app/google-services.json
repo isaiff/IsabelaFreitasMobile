@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1088693620300",
+    "project_id": "io-github-isaiff-isabelamobile",
+    "storage_bucket": "io-github-isaiff-isabelamobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088693620300:android:ef88ae20d0f9ac2a552ee9",
+        "android_client_info": {
+          "package_name": "br.com.germinare.isabelafreitasmobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNsFFjGSN4PY9tqbrF6EbaMHueCGSpsSA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
